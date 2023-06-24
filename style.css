@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --white:#FFFFFF;
+    --light-red:#FF4F4F;
+    --light-green:#7ECD71;
+    --bg-color:#000000;
+}
+
+.container{
+    background-color:var(--bg-color);
+    color:var(--white);
+    min-height:100vh;
+}
+
+.container header{
+    display:flex;
+    justify-content:space-between;
+    padding:0 10px;
+    height:10vh;
+    border-bottom:1px solid var(--white);
+    align-items: center;
+}
+header .right{
+    display:flex;
+} 
+.right p{
+    margin:10px;
+}
+
+.right p a{
+    color:var(--white);
+    text-decoration: none;
+}
+
+.container .main{
+    height: calc(100vh - 11vh);
+    display:grid;
+    place-items: center;
+}
+
+
+.signup-form{
+    width:60%;
+    position: relative;
+}   
+.signup-form h1{
+    margin:1rem 0;
+    font-size:2.5rem;
+    font-weight:500;
+}
+.signup-form input{
+    width:100%;
+    margin:5px 0;
+    border:none;
+    border-bottom:1px solid white;
+    font-size:1rem;
+    background-color:transparent;
+    padding:7px 0;
+    color:white;
+}
+input:focus{
+    outline: none;
+}
+
+.signup-form .alert-message{
+    margin:1rem 0;
+   height:25px;
+   display: flex;
+   align-items: center;
+}
+
+.signup-form #signup-btn{
+    width:120px;
+    line-height:2.5;
+    font-size:1rem;
+    cursor: pointer;
+}
+
+
+.details-section{
+    height:calc(100vh - 9vh);
+    padding:2rem;
+}
+
+.details h1{
+    margin:2rem 0;
+    font-weight:500;
+}
+.details #logout-btn{
+    width:130px;
+    line-height:2.3;
+    font-size:1rem;
+    cursor: pointer;
+}
+
+.error{
+    color:red;
+}
+
+.success{
+    color:green;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="left">
+              <p>Header</p>
+            </div>
+            <div class="right">
+                <p id="Signup"><a href="index.html">Signup</a></p>
+                <p id="Profile"><a href="profile.html">Profile</a></p>
+            </div>
+        </header>
+
+      <div class="main">
+        <form class="signup-form">
+            <h1>Signup</h1>
+           <div class="inputs">
+           <input type="text"  id="name" placeholder="Full Name" autocomplete="off"><br>
+           <input type="email"  id="email" placeholder="Email" autocomplete="off"><br>
+           <input type="password"  id="password" placeholder="Password"><br>
+           <input type="password"  id="confirm-password" placeholder="Confirm Password"><br>
+        </div>
+
+        <div class="alert-message">
+            <!-- <p>Error : All the fields are mandatory</p> -->
+        </div>
+
+        <button id="signup-btn" type="submit">Signup</button>
+
+    </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
